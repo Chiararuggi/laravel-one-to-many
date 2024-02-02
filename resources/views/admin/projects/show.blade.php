@@ -10,6 +10,7 @@
         </div>
         <div class="row">
             <p>{{ $project->description }}</p>
+            <p>{{ $project->type ? $project->type->name : 'no category' }}</p>
             {{-- <a href="{{ route('projects.edit', $project->id) }}" class="btn btn-warning">Modifica</a> --}}
             <a href="{{ route('admin.projects.index') }}" class="btn btn-primary mt-3">Torna alla projects list</a>
 
