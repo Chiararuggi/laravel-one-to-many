@@ -9,7 +9,7 @@
                         <div class="card-header">{{ $project->title }}</div>
                         <div class="card-body">{{ $project->description }}</div>
                         <a href="{{ route('admin.projects.show', $project->id) }}"><img src="{{ $project->image }}"
-                                class="comics-img" alt="{{ $project->title }}">
+                                class="comics-img w-50" alt="{{ $project->title }}">
                         </a>
                     </div>
                     <div class="card-body">{{ $project->topic }}</div>
@@ -23,8 +23,10 @@
                         <input type="submit" value="Delete" class="btn btn-danger">
                     </form>
                 </div>
+            @endforeach
+
         </div>
-        @endforeach
+
     </div>
-    </div>
+
 @endsection
